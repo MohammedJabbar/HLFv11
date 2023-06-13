@@ -1,0 +1,4 @@
+import random
+
+bits = ''.join(random.choice('01') for _ in range(1000))
+print(bits)
