@@ -1,4 +1,7 @@
 import random
 
-bits = ''.join(random.choice('01') for _ in range(1000))
-print(bits)
+bits = 0
+for _ in range(1000):
+    bits = (bits << 1) | random.getrandbits(1)
+
+print(format(bits, '0>1000b'))
